@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Internet OS 12.0 - Pro</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="os.css">
+
+    <style>
+        .fa-solid, .fa-regular, .fa-brands {
+            font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+            font-weight: 900;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="notifications"></div>
+    
+    <div id="desktop" style="position:absolute; top:0; left:0; right:0; bottom:60px; padding:15px; z-index:1;">
+        <div id="desktop-icons" style="display:flex; flex-direction:column; flex-wrap:wrap; align-content:flex-start; gap:15px; height:100%;"></div>
+    </div>
+    
+    <div id="dock" style="z-index: 1000;"></div>
+    <div id="context-menu" style="z-index: 10000;"></div>
+
+    <script src="kernel.js"></script>
+    <script src="apps.js"></script>
+    <script src="boot.js"></script>
+
+</body>
+</html>
